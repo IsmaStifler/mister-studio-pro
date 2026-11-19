@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mister Studio Pro — Internal Creator Workflow & Channel Operations</title>
+  <meta name="description" content="Mister Studio Pro is a private, single-owner internal studio tool for managing owned channel video uploads, metadata, and performance analytics via official YouTube API Services." />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1120;
+      --card: #111827;
+      --border: #1f2937;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+      --ok: #34d399;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top, #13203b 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: -0.02em;
+    }
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: rgba(17, 24, 39, 0.88);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 19px;
+      color: #ffffff;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 12px 0 0;
+    }
+    li { margin-bottom: 8px; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .status-pill {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 13px;
+      background: rgba(52, 211, 153, 0.12);
+      color: var(--ok);
+      border: 1px solid rgba(52, 211, 153, 0.3);
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>Mister Studio Pro</h1>
+        <span class="badge">Private Internal API Client</span>
+      </div>
+      <nav aria-label="Primary navigation">
+        <a href="./">Overview</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://www.youtube.com/channel/UCkRLUtEP2CyoFtTWUiggMsg" target="_blank" rel="noopener noreferrer">Official Channel ↗</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h2>Application Overview (English)</h2>
+      <p>
+        <strong>Mister Studio Pro</strong> is a private, internal studio production and channel-management tool operated exclusively by the creator and owner of the channel
+        <a href="https://www.youtube.com/channel/UCkRLUtEP2CyoFtTWUiggMsg" target="_blank" rel="noopener noreferrer"><code>UCkRLUtEP2CyoFtTWUiggMsg</code></a>.
+      </p>
+      <span class="status-pill">Private Use Only · No Public Access · No Third-Party Accounts</span>
+      <ul>
+        <li><strong>Content Publishing:</strong> Uploads original owner-produced videos, sets titles, descriptions, tags, privacy status, scheduled timestamps, and custom thumbnails via authorized Google OAuth 2.0 credentials.</li>
+        <li><strong>Analytics &amp; Channel Reporting:</strong> Reads video-level and channel-level statistics (views, likes, comments, subscribers) exclusively for the owner's internal operational dashboard.</li>
+        <li><strong>Strict Access Scope:</strong> There is no public sign-up, no external user onboarding, and no multi-tenant access.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Resumen de la Aplicación (Español)</h2>
+      <p>
+        <strong>Mister Studio Pro</strong> es una herramienta interna y privada de producción audiovisual y gestión editorial utilizada únicamente por el propietario del canal
+        <a href="https://www.youtube.com/channel/UCkRLUtEP2CyoFtTWUiggMsg" target="_blank" rel="noopener noreferrer"><code>UCkRLUtEP2CyoFtTWUiggMsg</code></a>.
+      </p>
+      <ul>
+        <li><strong>Publicación oficial OAuth 2.0:</strong> sube vídeos propios, configura títulos, descripciones, etiquetas, miniaturas y visibilidad únicamente en el canal autorizado del propietario.</li>
+        <li><strong>Panel interno de rendimiento:</strong> sincroniza visualizaciones, «me gusta», comentarios y suscriptores para control operativo del propio creador.</li>
+        <li><strong>Sin acceso público:</strong> no admite registros de terceros ni presta servicio a usuarios externos.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Compliance &amp; Data Protection</h2>
+      <p>
+        Mister Studio Pro uses official <strong>YouTube API Services</strong> under OAuth 2.0 authorization. By using YouTube API Services, operations follow the
+        <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>, the
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>, and the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>.
+      </p>
+      <p class="muted">
+        Read our full <a href="privacy.html">Privacy Policy</a> for details on data handling, storage, non-sharing guarantees, and OAuth access revocation.
+      </p>
+    </section>
+
+    <footer>
+      <span>© 2026 Mister Studio Pro · Internal Creator Tool (Channel UCkRLUtEP2CyoFtTWUiggMsg)</span>
+      <span>
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a> ·
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>
