@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mister Studio Pro — Internal Creator Workflow & Channel Operations</title>
+  <title>Mister Studio Pro — Internal Creator Workflow &amp; Channel Operations</title>
   <meta name="description" content="Mister Studio Pro is a private, single-owner internal studio tool for managing owned channel video uploads, metadata, and performance analytics via official YouTube API Services." />
+  <link rel="canonical" href="https://ismastifler.github.io/mister-studio-pro/" />
   <style>
     :root {
       color-scheme: dark;
@@ -26,9 +27,9 @@
       line-height: 1.65;
     }
     .wrap {
-      max-width: 880px;
+      max-width: 920px;
       margin: 0 auto;
-      padding: 40px 20px 64px;
+      padding: 36px 20px 56px;
     }
     header {
       display: flex;
@@ -36,12 +37,13 @@
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      padding-bottom: 24px;
+      padding-bottom: 22px;
       border-bottom: 1px solid var(--border);
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
     .brand {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 12px;
     }
@@ -55,6 +57,23 @@
       color: var(--accent);
       border: 1px solid rgba(56, 189, 248, 0.35);
     }
+    .yt-brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+      font-size: 12.5px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .yt-brand-pill:hover {
+      background: rgba(255, 255, 255, 0.1);
+      text-decoration: none;
+    }
     .brand h1 {
       margin: 0;
       font-size: 24px;
@@ -64,22 +83,31 @@
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
+      align-items: center;
     }
     a {
       color: var(--accent);
       text-decoration: none;
     }
     a:hover { text-decoration: underline; }
+    .nav-btn {
+      padding: 5px 11px;
+      border-radius: 8px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      font-weight: 600;
+      font-size: 13.5px;
+    }
     .card {
       background: rgba(17, 24, 39, 0.88);
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 24px;
-      margin-bottom: 20px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
     }
     h2 {
       margin-top: 0;
-      font-size: 19px;
+      font-size: 18px;
       color: #ffffff;
     }
     ul {
@@ -99,15 +127,21 @@
       border: 1px solid rgba(52, 211, 153, 0.3);
     }
     footer {
-      margin-top: 36px;
-      padding-top: 20px;
+      margin-top: 28px;
+      padding-top: 18px;
       border-top: 1px solid var(--border);
       font-size: 13px;
       color: var(--muted);
       display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-row {
+      display: flex;
       flex-wrap: wrap;
       gap: 14px;
       justify-content: space-between;
+      align-items: center;
     }
   </style>
 </head>
@@ -117,10 +151,18 @@
       <div class="brand">
         <h1>Mister Studio Pro</h1>
         <span class="badge">Private Internal API Client</span>
+        <a class="yt-brand-pill" href="https://developers.google.com/youtube" target="_blank" rel="noopener noreferrer" title="Powered by official YouTube API Services">
+          <svg width="24" height="17" viewBox="0 0 28 20" aria-hidden="true">
+            <rect width="28" height="20" rx="5" fill="#FF0000" />
+            <polygon points="11,5.5 11,14.5 19,10" fill="#FFFFFF" />
+          </svg>
+          <span>Developed with YouTube</span>
+        </a>
       </div>
       <nav aria-label="Primary navigation">
         <a href="./">Overview</a>
-        <a href="privacy.html">Privacy Policy</a>
+        <a class="nav-btn" href="privacy.html">Privacy Policy</a>
+        <a class="nav-btn" href="terms.html">Terms of Service</a>
         <a href="https://www.youtube.com/channel/UCkRLUtEP2CyoFtTWUiggMsg" target="_blank" rel="noopener noreferrer">Official Channel ↗</a>
       </nav>
     </header>
@@ -153,25 +195,38 @@
     </section>
 
     <section class="card">
-      <h2>Compliance &amp; Data Protection</h2>
+      <h2>YouTube API Services Attribution, Terms &amp; Privacy</h2>
       <p>
-        Mister Studio Pro uses official <strong>YouTube API Services</strong> under OAuth 2.0 authorization. By using YouTube API Services, operations follow the
-        <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>, the
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>, and the
+        Mister Studio Pro is independently operated and developed for single-owner workflows using official <strong>YouTube API Services</strong> under OAuth 2.0 authorization. By using this application, you agree to be bound by the
+        <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a> and acknowledge the
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and the
         <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>.
       </p>
       <p class="muted">
-        Read our full <a href="privacy.html">Privacy Policy</a> for details on data handling, storage, non-sharing guarantees, and OAuth access revocation.
+        Legal documentation: <a href="privacy.html">Privacy Policy (privacy.html)</a> · <a href="terms.html">Terms of Service (terms.html)</a>.
       </p>
     </section>
 
     <footer>
-      <span>© 2026 Mister Studio Pro · Internal Creator Tool (Channel UCkRLUtEP2CyoFtTWUiggMsg)</span>
-      <span>
-        <a href="privacy.html">Privacy Policy</a> ·
-        <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a> ·
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
-      </span>
+      <div class="footer-row">
+        <span>© 2026 Mister Studio Pro · Channel <code>UCkRLUtEP2CyoFtTWUiggMsg</code></span>
+        <span style="display:inline-flex;align-items:center;gap:6px;">
+          <svg width="18" height="13" viewBox="0 0 28 20" aria-hidden="true">
+            <rect width="28" height="20" rx="5" fill="#FF0000" />
+            <polygon points="11,5.5 11,14.5 19,10" fill="#FFFFFF" />
+          </svg>
+          <span>Developed with YouTube API Services</span>
+        </span>
+      </div>
+      <div class="footer-row">
+        <span>URL: <a href="https://ismastifler.github.io/mister-studio-pro/">https://ismastifler.github.io/mister-studio-pro/</a></span>
+        <span>
+          <a href="privacy.html">Privacy Policy</a> ·
+          <a href="terms.html">Terms of Service</a> ·
+          <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a> ·
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+        </span>
+      </div>
     </footer>
   </div>
 </body>
